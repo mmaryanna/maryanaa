@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 3.</title>
+</head>
+<body>
+<script>
+    "use strict";
+    alert("Привіт, давай обрахуємо декілька задач!");
+
+    // Обчислення об'єму конуса
+    alert ("Завдання 1. Обчислимо об'єм конуса.");
+    const radiusCone = parseFloat(prompt("Введіть радіус основи:", ""));
+    const heightCone = parseFloat(prompt("Введіть висоту конуса:", ""));
+    let volumeCone = (1/3) * Math.PI * Math.pow(radiusCone, 2) * heightCone;
+    alert("Об'єм конуса дорівнює: " + volumeCone.toFixed(2));
+
+    // Обчислення площі та периметра еліпса
+    alert ("Завдання 2. Обчислимо площу та периметр еліпса");
+    const a = parseFloat(prompt("Введіть піввелику вісь еліпса (a):", ""));
+    const b = parseFloat(prompt("Введіть півменшу вісь еліпса (b):", ""));
+    let areaEllipse = Math.PI * a * b;
+    let perimeterEllipse = Math.PI * (3 * (a + b) - Math.sqrt((3 * a + b) * (a + 3 * b)));
+    alert("Площа еліпса дорівнює: " + areaEllipse.toFixed(2));
+    alert("Периметр еліпса дорівнює: " + perimeterEllipse.toFixed(2));
+
+</script>
+</body>
+</html>
